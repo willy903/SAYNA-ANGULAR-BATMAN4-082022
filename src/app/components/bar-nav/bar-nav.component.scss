@@ -1,0 +1,25 @@
+@use "../../abstract" as *;
+header {
+    margin: 0 auto;
+    width: 85%;
+    @extend %bordur;
+    border-bottom: $border-style;
+    .link_header {
+        @include flex-center(row, space-between);
+        padding: 40px;
+        &_grp a {
+            font-family: rajhdani;
+            color: #fff;
+            font-size: 36px;
+            @include margin(0, 15px, 15px);
+            text-decoration: none;
+        }
+    }
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.6rem;
+}

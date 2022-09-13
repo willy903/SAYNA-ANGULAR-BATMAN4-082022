@@ -1,0 +1,86 @@
+@use "../../abstract" as *;
+.bloc-citation {
+    width: 85%;
+    margin: 0 auto;
+    @extend %bordur;
+    @include flex-center(row, center);
+    .sect-citation {
+        width: 50%
+    }
+}
+
+.citation {
+    max-width: 80%;
+    text-align: center;
+    display: block;
+}
+
+.item-citation {
+    display: flex;
+    padding: 30px;
+}
+
+.item-citation2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cit2 {
+    margin: 12px;
+    font-size: 12px;
+    text-align: center;
+    width: 200px;
+}
+
+.item-citation3 {
+    justify-content: flex-end;
+}
+
+.nav-footer {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 40px;
+}
+
+.petit-presentation {
+    font-size: 1.2vw;
+    line-height: 20px;
+}
+
+.petit-presentation>img {
+    width: 20px;
+}
+
+.bloc-icon {
+    margin-top: 23px;
+    @include flex-center(row, center);
+}
+
+.bloc-icon>div {
+    margin: 12px;
+}
+
+.bloc-icon>div>img {
+    width: 20px;
+    height: 20px;
+}
+
+.nav-footer {
+    width: 85%;
+    margin: 0 auto;
+    @extend %bordur;
+}
+
+.corp {
+    margin-left: -91000px;
+}
+
+.bgclick {
+    background-color: #49a2c9b2;
+    border: solid 1px #70aec9;
+}
+
+footer {
+    background: linear-gradient(129deg, rgba(62, 131, 164, 1) 0%, rgba(48, 74, 98, 1) 100%);
+}

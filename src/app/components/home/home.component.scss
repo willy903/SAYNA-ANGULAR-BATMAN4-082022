@@ -1,0 +1,317 @@
+// begin section entete
+@use "../../abstract" as *;
+.sectionTout {
+    background-color: #000;
+    background-image: url("../../../assets/Home/Bathome1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 85%;
+    margin: 0 auto;
+}
+
+h1,
+p {
+    color: #fff;
+}
+
+.container {
+    margin: 0 auto;
+    @include flex-center(column,
+    center);
+    &_paragraphe {
+        @include margin(200px,
+        0,
+        0);
+        width: 570px;
+        font-family: spaceGrotesk;
+        color: #fff;
+        text-align: center;
+        font-size: 22px;
+    }
+    .title_batman {
+        @include margin(40px,
+        0,
+        0);
+        font-family: spaceGrotesk;
+        font-size: 36px;
+        color: #fff;
+    }
+    &_grpButton {
+        @include margin(30px,
+        0,
+        0);
+    }
+    a {
+        font-family: rajhdani;
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        display: inline-block;
+        width: 250px;
+        text-align: center;
+        line-height: 60px;
+        @include margin(0,
+        15px,
+        15px);
+        @extend %bgg_Button;
+    }
+    &_flecheDown {
+        @include flex-center(column,
+        center);
+        @include margin(140px,
+        0,
+        0);
+    }
+}
+
+//end section entete
+.box {
+    padding: 50px;
+    margin: auto;
+    position: relative;
+    &_paragraphe {
+        width: 800px;
+        p {
+            text-align: justify;
+            font-size: 18px;
+        }
+    }
+    &_card {
+        @include margin(60px,
+        0,
+        0);
+    }
+    &_card {
+        @include flex-center(row,
+        space-between);
+        width: 100%;
+        background-color: black;
+        color: #fff;
+    }
+}
+
+.item_actor {
+    background: rgba(180, 131, 70, 0.1);
+    border-top: 1px #4e411db6 solid;
+    height: 80px;
+    @include flex-center(row,
+    center);
+    position: relative;
+    .acteur {
+        @include flex-center(column,
+        center);
+        @extend %bgg_Button;
+        width: 240px;
+        height: 70px;
+        border-radius: 40px;
+        img {
+            position: absolute;
+            width: 80px;
+            top: 2px;
+            left: 15px;
+        }
+        h6 {
+            @include margin(0,
+            0,
+            5px);
+            font-size: 10px;
+            width: 100px;
+            text-align: center;
+        }
+    }
+}
+
+// faddincard
+.Mutli {
+    margin: 0 auto;
+    .txt_presentation {
+        padding: 60px
+    }
+}
+
+.cart_faddin {
+    @include flex-center(row,
+    space-between);
+    padding: 60px;
+}
+
+.cart1 {
+    width: 600px;
+    @extend %cartfaddin;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    h1 {
+        font-size: 18px;
+        font-weight: 300;
+        margin: 15px;
+    }
+    h2 {
+        font-family: rajhdani;
+        font-size: 15px;
+        font-weight: 300;
+        margin: 15px;
+    }
+    h3 {
+        font-family: rajhdani;
+        font-size: 15px;
+        font-weight: 300;
+        @include margin(0,
+        0,
+        15px);
+        span {
+            color: $yellow;
+        }
+    }
+    p {
+        font-size: 12px;
+        @include margin(0,
+        0,
+        15px);
+    }
+}
+
+.bande_annonce {
+    padding: 60px;
+    position: relative;
+    .iconPlayer {
+        width: 10%;
+        position: absolute;
+        top: 41%;
+        right: 45%;
+        cursor: pointer;
+    }
+}
+
+.dropdown-in {
+    position: relative;
+    display: inline-block;
+    width: 99%;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown {
+    margin-top: 10px;
+}
+
+.dropdown-content {
+    font-family: spaceGrotesk;
+    margin-top: 20px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin-top: 0px;
+    width: 59.5%;
+}
+
+.contact {
+    background: $bgc_newsletter;
+    width: 100%;
+    color: white;
+    &-bloc {
+        margin: 0 auto;
+        width: 60%;
+    }
+    form h1 {
+        text-align: center;
+        padding: 50px;
+    }
+    form label {
+        font-family: spaceGrotesk;
+        font-weight: 400;
+    }
+    form .label1,
+    form h3 {
+        font-size: 20px;
+    }
+    form .label2 {
+        display: inline-block;
+        width: 65%;
+        @include margin(30px,
+        0,
+        0);
+        font-family: spaceGrotesk;
+        font-weight: 400;
+        color: $grey;
+    }
+    form input[type="text"] {
+        width: 100%;
+        padding-top: 10px;
+        font-family: spaceGrotesk;
+        @include margin(12px,
+        0,
+        0);
+        outline: none;
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid $grey;
+        color: white;
+        font-size: 18px;
+    }
+    form p {
+        margin-top: 12px;
+        border-bottom: 1px solid #c4c4c4;
+        color: $grey;
+    }
+    form h3 {
+        font-family: spaceGrotesk;
+        font-weight: 400;
+        @include margin(12px,
+        0,
+        0);
+        margin-bottom: 12px;
+    }
+}
+
+.btn-groupe {
+    @extend %btn-groupe-contact;
+}
+
+textarea {
+    @extend %textarea;
+}
+
+.bloc-confirmer {
+    margin-top: 14px;
+    padding: 50px;
+    text-align: center;
+    .confirmer {
+        @extend %confirmer;
+    }
+}
