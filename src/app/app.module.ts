@@ -11,6 +11,9 @@ import { BarNavComponent } from './components/bar-nav/bar-nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { AsideRightComponent } from './components/aside-right/aside-right.component';
+import { CartComponent } from './components/cart/cart.component';
+import { AsideComponent } from './components/aside/aside.component';
+import { ProductsComponent } from './components/products/products.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { AsideRightComponent } from './components/aside-right/aside-right.compon
     BarNavComponent,
     FooterComponent,
     PagenotfoundComponent,
-    AsideRightComponent
+    AsideRightComponent,
+    CartComponent,
+    AsideComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

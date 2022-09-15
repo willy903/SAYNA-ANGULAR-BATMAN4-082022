@@ -1,12 +1,41 @@
+@use "../../abstract" as *;
 .title-eshop {
     height: 700px;
     background-image: url("../../../assets/bg/bg_1.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    text-align: center;
+}
+
+.container {
+    @extend %bordur;
+    width: 85%;
+    height: 700px;
 }
 
 .title {
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 100px;
+}
+
+.title>h1 {
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.fleche {
+    text-align: center;
+    padding: 20px;
+    @extend %bordur;
     width: 85%;
+    margin: 0 auto;
+}
+
+.fleche>.container_flecheDown {
+    display: inline-block;
+    margin: 0 auto;
+    width: 10%;
 }
