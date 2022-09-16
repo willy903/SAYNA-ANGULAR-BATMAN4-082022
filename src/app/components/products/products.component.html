@@ -1,11 +1,27 @@
-<h1>Produits</h1>
-<div class="products">
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">description</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+<div class="resulats mt-5 d-flex justify-content-between">
+    <p>
+        Résultats: <span class="mx-2"> {{ products.length }}</span>
+    </p>
+    <p>Trier par <i class="fa-solid fa-chevron-down"></i></p>
+</div>
+
+<div class="row">
+    <ng-container *ngFor="
+        let productItem of products
+      " class="col-md-9">
+        <div class="col-md-4">
+            <div class="card my-3">
+                <img routerLink="product/{{ productItem.id }}" class="card-img-top imageClick" [src]="productItem.imageUrl" alt="Card image cap" />
+                <div class="bg-dark py-3 text-center">
+                    <h5 class="card-title">{{ productItem.Nom_A | uppercase }}</h5>
+                    <h5 class="card-title">{{ productItem.Prix | currency: "EUR" }}</h5>
+                </div>
+                <button class="mt-1">
+                    AJOUTER AU PANIER
+                </button>
+            </div>
         </div>
-    </div>
+
+    </ng-container>
+
 </div>

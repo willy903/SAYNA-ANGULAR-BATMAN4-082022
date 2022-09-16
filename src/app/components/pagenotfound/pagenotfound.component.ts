@@ -15,5 +15,7 @@ export class PagenotfoundComponent implements OnInit {
   onRedirectHome():void{
     this.router.navigateByUrl('home');
   }
-  
+  onRedirectEshop(){
+    this.router.navigateByUrl('eshop');
+  }
 }
