@@ -3,6 +3,7 @@ import * as fr from '@angular/common/locales/fr';
 import { registerLocaleData } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import{HttpClientModule} from '@angular/common/http';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +18,8 @@ import { AsideRightComponent } from './components/aside-right/aside-right.compon
 import { CartComponent } from './components/cart/cart.component';
 import { AsideComponent } from './components/aside/aside.component';
 import { ProductsComponent } from './components/products/products.component';
+import { ButtonComponent } from './components/button/button.component';
+import { SingleProductsComponent } from './components/single-products/single-products.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +34,15 @@ import { ProductsComponent } from './components/products/products.component';
     AsideRightComponent,
     CartComponent,
     AsideComponent,
-    ProductsComponent
+    ProductsComponent,
+    ButtonComponent,
+    SingleProductsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [
     {

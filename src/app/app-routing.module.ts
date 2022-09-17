@@ -1,6 +1,8 @@
+import { SingleProductsComponent } from './components/single-products/single-products.component';
+import { CartComponent } from './components/cart/cart.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { HomeComponent } from './components/home/home.component';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { GameComponent } from './components/game/game.component';
@@ -13,6 +15,8 @@ const routes: Routes = [
   { path: 'game', component: GameComponent},
   { path: 'eshop', component: EshopComponent},
   { path: 'moncompte', component: MonCompteComponent },
+  { path: 'Cart', component: CartComponent },
+  { path: 'eshop/product/:id', component:SingleProductsComponent},
   { path: '**', component: PagenotfoundComponent }
 ];
 

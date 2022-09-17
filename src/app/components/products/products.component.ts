@@ -3,9 +3,10 @@ import { ApiProductsService } from 'src/app/services/api-products.service';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.scss']
+  styleUrls: ['./products.component.scss'],
 })
 export class ProductsComponent implements OnInit {
+  p:number = 1;
   public products:any;
   constructor(private api:ApiProductsService) {}
 
